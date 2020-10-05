@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+    background: linear-gradient(70.44deg,#121212 55%,#5d817b);
+    color: white;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 69vw;
+    height: 2px;
+    background: linear-gradient(89.75deg,#9bf0e1 -1.5%,rgba(155,240,225,0) 111.48%);
+  }
+
+.main h1 {
+    white-space: nowrap; 
+    margin: 0 auto;
+    overflow: hidden; 
+    padding-right: .15em;
+    border-right: .12em solid rgb(59, 59, 59); 
+    font-size: 7vw;
+    animation: 
+      typing 2.5s steps(30),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5d817b }
+}
