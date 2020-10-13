@@ -46,15 +46,17 @@ body {
     background-color: aquamarine;
     color: black;
     padding: 0.50em 2em;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.25rem;
 }
 
 .sw, .hw {
     background-color: #39625c;
     border-radius: 0.50em;
     padding: 2em;
-    margin: 1em;
+    margin: 1em 4em;
     width: 50vw;
-    animation: anim1 0.5s linear;
+    animation: anim1 0.5s ease-out;
 }
 
 .sw:hover, .hw:hover {
@@ -84,8 +86,10 @@ li {
 @keyframes anim1 {
     from {
         width: 20vw;
+        opacity: 0;
     }
     to {
         width: 50vw;
+        opacity: 1;
     }
 }
