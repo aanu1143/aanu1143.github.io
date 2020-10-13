@@ -10,15 +10,36 @@ body {
     color: white;
 }
 
+.back {
+    position: absolute;
+    width: 100%;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+.back button{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    margin: 2em 1em;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+    cursor: pointer;
+    float: right;
+}
+
 .main {
     height: 100vh;
     display: grid;
     place-content: center;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: auto auto;
 }
 
 .head {
@@ -28,18 +49,19 @@ body {
 }
 
 .sw, .hw {
-    background-color: #5d817b;
+    background-color: #39625c;
     border-radius: 0.50em;
     padding: 2em;
     margin: 1em;
     width: 50vw;
+    animation: anim1 0.5s linear;
 }
 
 .sw:hover, .hw:hover {
-    background-color: #39625c;
+    background-color: #5d817b;
 }
 
-.hw h3, .sw h3 {
+.hw h2, .sw h2 {
     margin-bottom: 1em;
 }
 
@@ -57,4 +79,13 @@ li {
     list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
     font-weight: 600;
     margin-bottom: 0.50em;
+}
+
+@keyframes anim1 {
+    from {
+        width: 20vw;
+    }
+    to {
+        width: 50vw;
+    }
 }

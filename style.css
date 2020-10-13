@@ -10,6 +10,32 @@ body {
     color: white;
 }
 
+.uses {
+    position: absolute;
+    width: 100%;
+}
+
+.uses a {
+    text-decoration: none;
+}
+
+.uses button{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    margin: 2em 1em;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+    cursor: pointer;
+    float: right;
+}
+
 .main {
     height: 100vh;
     display: flex;
