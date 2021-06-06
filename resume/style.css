@@ -54,13 +54,19 @@ body {
     position: relative;
     height: 90vh;
     width: 70vw;
+    padding: 2vw;
     border-radius: 25px;
     background: rgba(157, 238, 218, 0.096);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 80px rgba(78, 78, 78, 0.2);
-    overflow: hidden;
-    padding: 2vw;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
 }
 
 .header {
@@ -111,8 +117,13 @@ body {
     margin-top: 2vw;
 }
 
-.left div, .right div {
+.left > div, .right > div {
     margin-bottom: 3vw;
+}
+
+
+.job, .project {
+    margin-bottom: 1.5vw;;
 }
 
 .heading {
@@ -123,23 +134,34 @@ body {
     border-bottom: 2px solid;
     margin-bottom: 1vw;
     width: fit-content;
+    width: -moz-fit-content;
     color: #eec692;
 }
 
-.education h3 {
+.education h3,
+.job h3 {
     font-size: 32px;
     font-weight: 800;
 }
 
-.education p {
-    font-size: 27px;
+.orga {
+    font-size: 24px;
 }
 
-.education i {
+.education p:last-child,
+.job p:last-child,
+.project p:last-child {
+    color: rgba(139, 212, 255, 0.726);
     font-size: 20px;
 }
 
-.education span {
+.education i,
+.job i {
+    font-size: 20px;
+}
+
+.education span,
+.job span {
     color: rgb(122, 121, 121);
 }
 
@@ -156,3 +178,11 @@ body {
     margin: 7px;
 }
 
+.project h3 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.project p{
+    font-size: 20px;
+}
