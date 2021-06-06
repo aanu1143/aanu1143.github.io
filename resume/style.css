@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --theme: rgb(148, 120, 61);
+}
+
 body {
     font-family: 'Raleway';
     background: linear-gradient(70.44deg,#121212 55%,#5d817b);
@@ -55,7 +59,7 @@ body {
     height: 90vh;
     width: 70vw;
     padding: 2vw;
-    border-radius: 25px;
+    border-radius: 15px;
     background: rgba(157, 238, 218, 0.096);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -86,6 +90,7 @@ body {
 
 .title p:first-child {
     font-size: 40px;
+    color: var(--theme);
 }
 
 .title i {
@@ -109,12 +114,13 @@ body {
 
 .details span {
     float: right;
+    color: var(--theme);
 }
 
 .body {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin-top: 2vw;
+    margin-top: 4vw;
 }
 
 .left > div, .right > div {
@@ -135,7 +141,7 @@ body {
     margin-bottom: 1vw;
     width: fit-content;
     width: -moz-fit-content;
-    color: #eec692;
+    color: var(--theme);
 }
 
 .education h3,
@@ -150,8 +156,9 @@ body {
 
 .education p:last-child,
 .job p:last-child,
-.project p:last-child {
-    color: rgba(139, 212, 255, 0.726);
+.project p:last-child,
+.cert p:last-child {
+    color: rgba(161, 196, 216, 0.7);
     font-size: 20px;
 }
 
@@ -173,16 +180,18 @@ body {
 
 .skills span {
     border-radius: 10px;
-    background-color: rgba(141, 71, 71, 0.438);
+    background-color: var(--theme);
     padding: 10px 20px;
     margin: 7px;
 }
 
-.project h3 {
+.project h3,
+.cert h3 {
     font-size: 27px;
     font-weight: 400;
 }
 
-.project p{
+.project p,
+.cert p {
     font-size: 20px;
 }
