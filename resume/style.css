@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway';
+    background: linear-gradient(70.44deg,#121212 55%,#5d817b);
+    color: white;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+.back button{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    margin: 2em 1em;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+    cursor: pointer;
+    float: right;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    border: 2px solid rgb(243, 242, 242);
+}
+
+.card-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.card {
+    position: relative;
+    height: 90vh;
+    width: 70vw;
+    border-radius: 25px;
+    background: rgba(157, 238, 218, 0.096);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(78, 78, 78, 0.2);
+    overflow: hidden;
+    padding: 2vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title > * {
+    padding-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.title p:first-child {
+    font-size: 40px;
+}
+
+.title i {
+    font-size: 25px;
+}
+
+.title p {
+    font-size: 20px;
+}
+
+.pic img {
+    width: 80%;
+    border-radius: 100%;
+}
+
+.details p {
+    display: flow-root;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.details span {
+    float: right;
+}
