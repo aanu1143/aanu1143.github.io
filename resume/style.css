@@ -104,3 +104,55 @@ body {
 .details span {
     float: right;
 }
+
+.body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2vw;
+}
+
+.left div, .right div {
+    margin-bottom: 3vw;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin-bottom: 1vw;
+    width: fit-content;
+    color: #eec692;
+}
+
+.education h3 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.education p {
+    font-size: 27px;
+}
+
+.education i {
+    font-size: 20px;
+}
+
+.education span {
+    color: rgb(122, 121, 121);
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.skills span {
+    border-radius: 10px;
+    background-color: rgba(141, 71, 71, 0.438);
+    padding: 10px 20px;
+    margin: 7px;
+}
+
